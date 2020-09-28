@@ -1,0 +1,89 @@
+.rec01{
+    background-color: #E0E0E0;
+    height: 500px;
+    width: 1900px;
+    position: absolute;
+    
+
+    
+}
+
+.profileCard {
+    
+   
+    max-width: 320px;
+    text-align: center;
+    font-family: arial;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 #00000033;
+    position: relative;
+    
+  }
+
+  
+  .profileTitle {
+    color: #115eda;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 4px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  /*.accNotification {
+    
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    
+    margin-left: 1760px;
+    margin-top: -560px;
+    
+  } */
+
+  .accNotification{
+    background-color: #bdbdbd;
+    float:right;
+    
+    position: absolute;
+    right:60px;
+    top: 140px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+  
+  .accNotification:hover {
+    background: gray
+  }
+  
+  .accNotification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #115eda;
+    color: white;
+  }
+
+  
