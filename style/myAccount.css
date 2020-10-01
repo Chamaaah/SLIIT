@@ -1,3 +1,23 @@
+.Contentbanner {
+  background-color: #212121;
+  height: 120px;
+  margin-top: 5px;
+  border-radius: 0px;
+  
+  
+}
+
+.Contentbanner h1 {
+  
+  left: 35px;
+  top: 108px;
+  text-align: center;
+  color: white;
+  
+  
+  
+}
+
 .rec01{
     background-color: #E0E0E0;
     height: 500px;
@@ -86,4 +106,143 @@
     color: white;
   }
 
+  .notificationTXT
+  {
+    color: silver;
+    float:right;
+    
+    position: absolute;
+    right:40px;
+    top: 170px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+  }
   
+  .buttonPayment {
+    background-color: #3fc300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 230px;
+    margin-left: 140px;
+    margin-top: -20px;
+  }
+
+  .buttonPayment02 {
+    background-color: #212121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 260px;
+    margin-left: 140px;
+    margin-top: 20px;
+  }
+
+  .buttonDelete {
+    background-color: #212121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 540px;
+    margin-top: 0px;
+  }
+
+  .buttonStudy {
+    background-color: #3fc300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 230px;
+    margin-left: 140px;
+    margin-top: -20px;
+  }
+
+  .buttonView {
+    background-color: #212121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 140px;
+    margin-left: 140px;
+    margin-top: 20px;
+  }
+
+  .buttonEnroll {
+    background-color: #3fc300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 540px;
+    margin-top: 0px;
+  }
+
+  .buttonCont {
+    background-color: #212121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 180px;
+    margin-left: 540px;
+    margin-top: 0px;
+  }
+
+  .submitButton {
+    background-color: #212121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 180px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
