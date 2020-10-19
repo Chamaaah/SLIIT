@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style/style.css">
+<title>BCC Online Teacher Trainer</title>
+<link rel="stylesheet" type="text/css" href="style/uploadcontent.css">
 <link rel="stylesheet" type="text/css" href="style/headerfooter.css">
+<script src="script/javascript.js"></script>
 </head>
 <body>
 
 <div class="header">
   <a href="#default"></a>
   <div class="header-left">
-   <img class="logo" src="images/logo2.png">
+  <img class="logo" src="images/logo2.png">
       <a class="active" href="#home">Home</a>
       <a href="#study">Study Area</a>
       <a href="#content">Contents</a>
@@ -17,32 +19,72 @@
       <a href="#about">About Us</a>
       <a href="#contact">Contact Us</a>
       
-      <input class="search" type="text" placeholder="  search here">
+      <input class="search" type="text" value="  search here">
 
       <a class="regbutton" href="#register">Register</a>
       <a class="logbutton" href="#login">Login</a>
       <img class="logpic" src="images/usericon.png">    
   </div>
 </div>
-    
 
-<div class="form-container">
-    <div  class="body" style="padding:50px; text-align: center" >
-    <h1>LOG IN <img class="logimg" src="images/login.jpg" alt="login"style="width:40px;height:40px;"></h1>
-   
-    <a  href="#teacher">Teacher</a>
-    <a class="trainerbutton"href="#trainer">Trainer</a><br><br><br>
+<div class="upload-header">
+ <div style="text-align: center">
+  <h1 style="color: white">Edit Video</h1>
+  </div> 
+</div>
+<br> 
+
+<div class="div-editcontent">
+
+<div class="edit-content-box">
+
+				
+
+<div style="width: 90%;margin: auto; margin-top: 25px ">
+    <?php
     
-    <input type="text" id="username" placeholder="Email or username"><br><br>
-    <input type="password" placeholder="Enter Password" name="psw"> <br><br>
-    <input type="checkbox" name="remember">Remember me<br><br>
-    <button class="active" onclick="myFunction()">Log In</button>
-    </div>
-    </div>
-    <br><br><br><br>
+		require'config.php';
+
+        $videoID = $_GET['videoID'];
+		$sql ="SELECT videoID, caption, description,module,file FROM video WHERE videoID ='$videoID'";
+		$result = $con->query($sql);
+
+		while ($row = $result -> fetch_assoc())	{
+
+				echo '<div style="width: 75%;margin: auto; margin-top: 25px ">
+                        <center>
+                        <h2 style="color: darkslategray">Edit Video</h2>
+                        <form action="updateMyVideo.php?videoID='.$row["videoID"].'" method="post" enctype="multipart/form-data">
+
+                            <label for="caption">Enter a Caption</label><br>
+                          <input type="text" id="caption" name="caption" style="width: 400px" class="input-design" value="'.$row["caption"].'"><br><br>
+
+                          <label for="description">Enter the description</label><br>
+                          <textarea id="description" name="description" rows="4" cols="60" class="input-design" >'.$row["description"].'</textarea><br><br>
+                        <br>
+                            <label for="caption">Enter the module (A or B)</label><br>
+                          <input type="text" id="module" name="module" style="width: 75px" class="input-design" value="'.$row["module"].'" ><br><br>
+
+                          <input type="submit" class="submit">
+                        </form>
+                        </center>
+                        </div>
+                        <br>';
+			}
+    $con->close();
+		?>
+
+
+
+</div>
+
+</div>
+</div>
     
-<!--Footer-->        
-      <div class="footer">
+<br>
+
+<!--footer-->
+  <div class="footer">
 	<div class="containerPostNew">
     
 			<div class="boxEditPostNew">
@@ -73,15 +115,6 @@
 			</div>
       </div>	
 </div>
-<!--JavaScript--> 
-        <script>
-            function myFunction() {
-            alert("Log in successful");
-            }   
-        </script>
-    
-    
-    
-    
+
 </body>
 </html>
